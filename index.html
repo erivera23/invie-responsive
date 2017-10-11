@@ -106,11 +106,29 @@
 
     <!--JAVASCRIPT-->
     <script type="text/javascript">
+      var consulta = window.matchMedia('(max-width: 500px)');
       var $burguerButton = document.getElementById('burguer-button');
       var $menu = document.getElementById('menu');
-      $burguerButton.addEventListener('touchstart', function(){
+      consulta.addListener(mediaQuery);
+
+      function mediaQuery()
+      {
+        if(consulta.matches)
+        {
+          $burguerButton.addEventListener('touchstart', toggleMenu);
+        }
+        else
+        {
+          $burguerButton.removeEventListener('touchstart', toggleMenu);
+        }
+      }
+
+      mediaQuery();
+
+      function toggleMenu()
+      {
         $menu.classList.toggle('active');
-      })
+      }
     </script>
   </body>
 </html>
