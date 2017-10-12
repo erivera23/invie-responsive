@@ -20,7 +20,7 @@
             <a href="index.html">Home</a>
           </li>
           <li>
-            <a href="#guitarras">Guitarras</a>
+            <a href="#guitarras" id="boton-guitarras">Guitarras</a>
           </li>
           <li>
             <a href="precios.html">Precios</a>
@@ -31,14 +31,19 @@
       <div class="contenedor">
         <h1 class="titulo">Guitarras <span>invie</span>sibles</h1><!-- titulo -->
         <h3 class="title-a">Sé la estrella de rock que siempre quisiste ser</h3><!-- resumen -->
-        <a class="button" href="#guitarras">Conoce mas</a><!-- boton -->
+        <a class="button" href="#guitarras">Conoce más</a><!-- boton -->
       </div>
     </section>
     <section id="guitarras" class="guitarras contenedor"> <!-- guitarras -->
       <h2>Nuestras guitarras</h2><!-- titulo -->
-      <div class="video-responsive-contenedor">
-        <iframe class="video-responsive-src" width="560" height="315" src="https://www.youtube.com/embed/kFdtIX78qn8" frameborder="0" allowfullscreen></iframe>
+      <div class="video-demo-contenedor">
+        <div class="video-demo">
+          <div class="video-responsive-contenedor">
+            <iframe class="video-responsive-src" width="560" height="315" src="https://www.youtube.com/embed/kFdtIX78qn8" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>  
       </div>
+      
       <article class="guitarra"> <!-- guitarra 1 -->
         <img class="derecha" data-src="images/invie-acustica.png|images/invie-acustica2x.png" alt="Guitarra Invie Acustica" width="350"/>
         <div class="contenedor-guitarra-a">
@@ -115,6 +120,7 @@
       var consulta = window.matchMedia('(max-width: 500px)');
       var $burguerButton = document.getElementById('burguer-button');
       var $menu = document.getElementById('menu');
+      var $guitarras = document.getElementById('boton-guitarras');
       consulta.addListener(mediaQuery);
 
       function mediaQuery()
@@ -122,6 +128,8 @@
         if(consulta.matches)
         {
           $burguerButton.addEventListener('touchstart', toggleMenu);
+          $guitarras.addEventListener('touchend', toggleMenu);
+          console.log($guitarras);
         }
         else
         {
