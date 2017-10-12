@@ -326,6 +326,7 @@ input:focus, textarea:focus
 	top: 20px;
 	color: white;
 	z-index: 3;
+	display: none;
 }
 
 /*--------------------INICIO MEDIA QUERIES ---------*/
@@ -486,6 +487,11 @@ input:focus, textarea:focus
 @media screen and (max-width: 500px)
 {
 	/*PORTADA */
+	.burguer-button
+	{
+		display: block;
+	}
+
 	.portada .contenedor
 	{
 		position: static;
