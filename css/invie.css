@@ -324,6 +324,7 @@ input:focus, textarea:focus
 	position: absolute;
 	left: 20px;
 	top: 20px;
+	color: white;
 	z-index: 3;
 }
 
@@ -390,6 +391,18 @@ input:focus, textarea:focus
 		margin: 0;
 	}
 	/*Guitarras */
+
+	/*PRECIOS */
+	.tabla
+	{
+		margin: 50px 20px;
+	}
+	.tabla .contenedor
+	{
+		overflow: auto;
+		border: 1px solid #273b47;
+	}
+	/*PRECIOS */
 }
 
 @media screen and (max-width: 767px)
@@ -524,6 +537,16 @@ input:focus, textarea:focus
 	.portada
 	{
 		text-align: center;
+	}
+
+	.header
+	{
+		position: static;
+	}
+
+	.header .contenedor
+	{
+		position: static;
 	}
 
 	.titulo
