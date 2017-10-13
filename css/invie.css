@@ -455,6 +455,11 @@ input:focus, textarea:focus
 		display: block;
 	}
 
+	.formulario label
+	{
+		font-size: 20px;
+	}
+
 	.intereses label
 	{
 		display: block;
