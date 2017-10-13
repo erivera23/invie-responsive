@@ -120,6 +120,6 @@
     <script type="text/javascript">
       function mediaQuery(){consulta.matches?($burguerButton.addEventListener("touchstart",toggleMenu),$guitarras.addEventListener("touchend",toggleMenu),console.log($guitarras)):$burguerButton.removeEventListener("touchstart",toggleMenu)}function toggleMenu(){$menu.classList.toggle("active")}function showMenu(){$menu.classList.add("active")}function hideMenu(){$menu.classList.remove("active")}WebFont.load({google:{families:["Montserrat","Allerta"]}});var consulta=window.matchMedia("(max-width: 500px)"),$burguerButton=document.getElementById("burguer-button"),$menu=document.getElementById("menu"),$guitarras=document.getElementById("boton-guitarras");consulta.addListener(mediaQuery),mediaQuery();var bLazy=new Blazy({selector:"img"}),$body=document.body,gestos=new Hammer($body);gestos.on("swipeleft",hideMenu),gestos.on("swiperight",showMenu);
     </script>
-    <link rel="stylesheet" href="css/invie.min.css"/>
+    <link rel="stylesheet" href="css/invie.css"/>
   </body>
 </html>

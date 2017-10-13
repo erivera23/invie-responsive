@@ -90,6 +90,17 @@ input:focus, textarea:focus
 	background: lightgray;	
 }
 
+img
+{
+	opacity: 0;
+	transition: 10s;	
+}
+
+img.b-loaded
+{
+	opacity: 1;
+}
+
 .button {
   border-radius: 12px;
   border: none;
@@ -350,17 +361,20 @@ input:focus, textarea:focus
 	/*Portada */
 	.titulo
 	{
+		transition: 1s;
 		font-size: 45px;
 		margin-top: 30px;
 	}
 
 	.title-a
 	{
+		transition: 1s;
 		font-size: 18px;
 	}
 
 	.portada
 	{
+		transition: 1s;
 		height: auto;
 	}
 
@@ -376,6 +390,7 @@ input:focus, textarea:focus
 	/*Guitarras */
 	.guitarras
 	{
+		transition: 1s;
 		text-align: center;
 	}
 
@@ -499,16 +514,19 @@ input:focus, textarea:focus
 {
 	.header
 	{
+		
 		text-align: center;
 	}
 
 	.logotipo
 	{
+		transition: 1s;
 		margin: 0;
 	}
 
 	.menu
 	{
+		
 		position: static;
 		display: block;
 	}
@@ -596,6 +614,7 @@ input:focus, textarea:focus
 
 	.portada
 	{
+		transition: 500ms;
 		text-align: center;
 	}
 
@@ -611,11 +630,13 @@ input:focus, textarea:focus
 
 	.titulo
 	{
+		transition: 500ms;
 		font-size: 30px;
 	}
 
 	.title-a
 	{
+		transition: 500ms;
 		font-size: 16px;
 	}
 	/*PORTADA */
